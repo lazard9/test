@@ -2,305 +2,286 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Maximo Update Utility</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="shards.min.css">
-    <link rel="stylesheet" href="utilityStyles.css">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Maximo Update Utility</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="shards.min.css">
+  <link rel="stylesheet" href="utilityStyles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 
 <!doctype html>
 
 <body>
-    <!--<nav th:insert="fragments/navbar.html :: nav"> </nav>-->
-    <!--<div th:insert="fragments/links.html :: div"> </div>-->
+  <!--<nav th:insert="fragments/navbar.html :: nav"> </nav>-->
+  <!--<div th:insert="fragments/links.html :: div"> </div>-->
 
-    <!--<header class="header">
+  <!--<header class="header">
         <img class="header__logo" src="logo.jpg" alt="Logo" width="300" height="240">
         <h1 class="header__title-text">Learning how to learn</h1>
         <p class="header__subtitle-text">about 20 words here</p>
         <div class="header__square-pic"></div>
     </header>-->
 
-    <header class="bg-white fixed-top py-2 px-3 shadow-sm">
-        <div class="container-fluid">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
-                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <img class="header__logo" src="logo.jpg" alt="Logo" width="250" height="110"
-                        style="width: 100px; height: auto;">
-                </a>
+  <header class="bg-white fixed-top py-2 px-3 shadow-sm">
+    <div class="container-fluid">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img class="header__logo" src="logo.jpg" alt="Logo" width="250" height="110"
+            style="width: 100px; height: auto;">
+        </a>
 
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-                    <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
-                </ul>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+        </ul>
 
-                <div class="d-flex col-12 col-lg-auto">
-                    <form class="mb-3 mb-lg-0 me-lg-3">
-                        <input type="search" class="form-control form-control-dark" placeholder="Search..."
-                            aria-label="Search">
-                    </form>
+        <div class="d-sm-flex col-12 col-lg-auto justify-content-between">
+          <form class="mb-3 mb-lg-0 me-sm-3">
+            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+          </form>
 
-                    <div class="text-end">
-                        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-                        <button type="button" class="btn btn-primary">Sign-up</button>
-                    </div>
-                </div>
-            </div>
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <main class="main" style="margin-top: 80px; min-height: 1200px;">
-        <div class="page customers-wrapper">
-            <div id="hero" class="customers--hero">
-                <div class="hero__wrapper">
-                    <div class="hero__background hero__background--show fadeIn"
-                        style="background-image: url('hero-customers.jpg')"></div>
-                    <div class="hero__content">
-                        <p class="hero__title--small">The first Serbian online real estate agency</p>
-                        <h1 _ngcontent-qdl-c290="" class="hero__title"> Buy or rent properties with no commission</h1>
-                    </div>
-                    <div class="hero__shadow" style="opacity: 1;"></div>
-                </div>
+  <main class="main" style="min-height: 1200px;">
+    <div class="page customers-wrapper">
+      <div id="hero" class="customers--hero">
+        <div class="hero__wrapper bg-dark">
+          <div class="hero__background">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('zlatibor_1.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('zlatibor_2.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('zlatibor_3.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('zlatibor_4.jpg')"></div>
+                <div class="swiper-slide" style="background-image: url('zlatibor_5.jpg')"></div>
+              </div>
             </div>
+          </div>
+          <div class="hero__content">
+            <p class="hero__title--small text-white">The first Serbian online real estate agency</p>
+            <h1 class="hero__title text-white"> Buy or rent properties<br>with <span class="text-primary">no
+                commission</span></h1>
+          </div>
+          <div class="hero__shadow"></div>
         </div>
-
-        <div style="padding: 5px 40px;">
-            <div id="divButton">
-                <div style="display:inline-block;">
-                    <h2 class="my-5">List of Customers</h2>
-                </div>
-            </div>
-            <table class="table table-striped table-responsive-md">
-                <thead class="tb-header"
-                    style="background-color:#04487e;color:#ffffff;font-size:17px;font-family: Comic Sans MS, Comic Sans, cursive;">
-                    <tr>
-                        <th>Customer name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody style="color:#04487e;font-family: Comic Sans MS, Comic Sans, cursive;">
-                    <tr th:each="customer, iStat : ${customerPage.content}" th:alt-title="${iStat.even}? 'even' : 'odd'"
-                        th:style="${iStat.odd}? 'background-color:#bcd4e8' : 'background-color:#ffffff'">
-                        <td th:text="${customer.firstName} + ' ' + ${customer.lastName}" />
-                        <td th:text="${customer.email}" />
-                        <td th:text="${customer.phone}" />
-                        <td th:text="${customer.status}" />
-                    </tr>
-                </tbody>
-            </table>
-            <div th:if="${customerPage.totalPages > 0}" class="page" th:each="pageNumber : ${pageNumbers}">
-                <a th:href="@{/customers(size=${customerPage.size}, page=${pageNumber})}" th:text=${pageNumber}
-                    th:class="${pageNumber==customerPage.number + 1} ? active"></a>
-            </div>
-        </div>
-    </main>
-
-    <div id="loadingImgSrv" class="loadImg">
-        <img id="loadingImg" class="loading-img" src="loading_transparent.gif" />
+      </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" id="modal-body">
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary">Close</button>
-                </div>
-            </div>
+    <div style="padding: 5px 40px;">
+      <div id="divButton">
+        <div style="display:inline-block;">
+          <h2 class="my-5">List of Customers</h2>
         </div>
+      </div>
+      <table class="table table-striped table-responsive-md">
+        <thead class="tb-header"
+          style="background-color:#04487e;color:#ffffff;font-size:17px;font-family: Comic Sans MS, Comic Sans, cursive;">
+          <tr>
+            <th>Customer name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody style="color:#04487e;font-family: Comic Sans MS, Comic Sans, cursive;">
+          <tr th:each="customer, iStat : ${customerPage.content}" th:alt-title="${iStat.even}? 'even' : 'odd'"
+            th:style="${iStat.odd}? 'background-color:#bcd4e8' : 'background-color:#ffffff'">
+            <td th:text="${customer.firstName} + ' ' + ${customer.lastName}" />
+            <td th:text="${customer.email}" />
+            <td th:text="${customer.phone}" />
+            <td th:text="${customer.status}" />
+          </tr>
+        </tbody>
+      </table>
+      <div th:if="${customerPage.totalPages > 0}" class="page" th:each="pageNumber : ${pageNumbers}">
+        <a th:href="@{/customers(size=${customerPage.size}, page=${pageNumber})}" th:text=${pageNumber}
+          th:class="${pageNumber==customerPage.number + 1} ? active"></a>
+      </div>
     </div>
+  </main>
 
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-white text-muted">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <!-- Left -->
-            <div class="me-5 d-none d-lg-block">
-                <span>Get connected with us on social networks:</span>
-            </div>
-            <!-- Left -->
+  <div id="loadingImgSrv" class="loadImg">
+    <img id="loadingImg" class="loading-img" src="loading_transparent.gif" />
+  </div>
 
-            <!-- Right -->
-            <div>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="" class="me-4 link-secondary">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-            <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
-
-        <!-- Section: Links  -->
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3 text-secondary"></i>Company name
-                        </h6>
-                        <p>
-                            Here you can use rows and columns to organize your footer content. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Products
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Angular</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">React</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Vue</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Laravel</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Useful links
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Pricing</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Settings</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Orders</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Help</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
-                        <p>
-                            <i class="fas fa-envelope me-3 text-secondary"></i>
-                            info@example.com
-                        </p>
-                        <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
-                    </div>
-                    <!-- Grid column -->
-                </div>
-                <!-- Grid row -->
-            </div>
-        </section>
-        <!-- Section: Links  -->
-
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-            © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+        <div class="modal-body" id="modal-body">
 
-    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
-    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
-    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
-    <script th:src="loading.js"></script>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script>
-        var image = document.getElementById("loadingImgSrv");
-        $('#divButton button').click(function (e) {
-            e.preventDefault();
-            //$("#modalSrv").show();
-            image.style.display = "block";
-            $.ajax({
-                type: "GET",
-                url: "/updateServices",
-                success: function (result) {
-                    //setTimeout(reload, 1000);
-                    //$("#modal").hide();
-                    image.style.display = "none";
-                    if (result == "error") {
-                        document.getElementById("exampleModalLongTitle").innerHTML = "Warning";
-                        document.getElementById("modal-body").innerHTML = "Error has occured. Please check the details using Results menu.";
-                        $('#exampleModalCenter').modal();
-                    } else {
-                        document.getElementById("exampleModalLongTitle").innerHTML = "Success";
-                        document.getElementById("modal-body").innerHTML = result;
-                        $('#exampleModalCenter').modal();
-                    }
-                }
-            });
-        });
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-white text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
 
-        $('#exampleModalCenter button').click(function (e) {
-            $('#exampleModalCenter').modal('hide');
-            location.reload(true);
-            /* $('#services').load('/services', function (result) {
-            }); */
-            /* $.ajax({
-                type: "GET",
-                url: "/services"
-            }); */
-        });
-    </script>
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+		autoplay: {
+			delay: 2000,
+		},
+		loop: true,
+    });
+  </script>
 </body>
 
 </html>
