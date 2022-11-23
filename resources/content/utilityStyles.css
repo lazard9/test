@@ -127,3 +127,512 @@
 	height: 100%;
 	object-fit: cover;
 }
+
+/* Estate section
+--------------------------------------------- */
+.estate-section-grid {
+	margin: 60px auto 80px;
+	overflow: hidden;
+	padding: 0 20px;
+	display: grid;
+	grid-column-gap: 0;
+	grid-row-gap: 30px;
+	max-width: 2100px;
+}
+
+@media screen and (min-width: 768px) {
+	.estate-section-grid {
+		margin-top: 90px;
+		margin-bottom: 115px;
+		padding: 0 35px;
+		grid-column-gap: 30px;
+		grid-auto-flow: column;
+		grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "B A" "B C";
+	}
+	
+	.estate-section-grid.row-reverse {
+    grid-template-areas: "A B" "C B";
+	}
+
+	.section-grid__heading {
+		grid-area: A;
+		align-self: end;
+	}
+
+	.section-grid__image,
+	.section-grid__image-reverse {
+		grid-area: B;
+		align-self: center;
+	}
+
+	.section-grid__content {
+		grid-area: C;
+		align-self: start;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.estate-section-grid {
+		margin-top: 120px;
+		margin-bottom: 150px;
+		padding: 0 50px;
+		grid-column-gap: 50px;
+	}
+}
+
+.estate-section-grid .section-grid__image img,
+.estate-section-grid .section-grid__image-reverse img  {
+	width: 100%;
+	max-width: 1000px;
+}
+
+.estate-section-grid .section-grid__image {
+	margin-left: -20px;
+}
+
+.estate-section-grid .section-grid__image img {
+	border-radius: 0 20px 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+	.estate-section-grid .section-grid__image {
+		margin-left: -35px;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.estate-section-grid .section-grid__image {
+		margin-left: -50px;
+	}
+	
+	.estate-section-grid .section-grid__image img {
+		border-radius: 20px;
+	}
+}
+
+.estate-section-grid .section-grid__image-reverse {
+	margin-right: -20px;
+}
+
+.estate-section-grid .section-grid__image-reverse img {
+	border-radius: 20px 0 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+	.estate-section-grid .section-grid__image-reverse {
+		margin-right: -35px;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.estate-section-grid .section-grid__image-reverse {
+		margin-right: -50px;
+	}
+	
+	.estate-section-grid .section-grid__image-reverse img {
+		border-radius: 20px;
+	}
+}
+
+.section-grid__heading .section-title--small {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: block;
+}
+
+.section-grid__heading .section-title {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 1.1;
+  max-width: 500px;
+}
+
+@media screen and (min-width: 1025px) {
+	.section-grid__heading .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+.section-grid__content .section-paragraph {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.section-grid__content .sec-img-icon {
+	width: 32px;
+}
+
+.section-grid__content .sec-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+/* Agency section
+--------------------------------------------- */
+.agency-section {
+	margin: 60px auto 80px;
+	padding: 0 20px;
+	max-width: 1600px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.agency-section {
+		margin-top: 90px;
+		margin-bottom: 115px;
+		padding: 0 35px;
+	}
+
+  .agency-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .agency-flex .agency-card {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+	.agency-section {
+		margin-top: 120px;
+		margin-bottom: 150px;
+		padding: 0 50px;
+	}
+}
+
+.agency-section .section-title--small {
+  font-weight: 600;
+  line-height: 1.5;
+  display: block;
+}
+
+.agency-section .section-title {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 1.1;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1025px) {
+	.agency-section .section-title {
+    margin-bottom: 90px;
+  }
+}
+
+.agency-section .agency-card__image {
+  height: 168px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.agency-section .agency-card__title {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1025px) {
+  .agency-section .agency-card__title {
+    font-size: 1.5rem;
+  }
+}
+
+.agency-section .agency-card__text {
+  line-height: 1.625;
+  font-weight: 500;
+}
+
+/* Parallax
+--------------------------------------------- */
+.paralax-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .paralax-section {
+    padding-left: 35px;
+    padding-right: 35px;
+  }    
+}
+
+@media screen and (min-width: 1025px) {
+  .paralax-section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }    
+}
+
+.paralax-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .275);
+}
+
+.paralax-background {
+  background-image: url('zlatibor-slika-1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.paralax-title {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #fff;
+  font-size: 90px;
+  font-weight: 600;
+  font-stretch: normal;
+  line-height: 0.78;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .paralax-title {
+    font-size: 140px;
+  }
+}
+
+/* Accordion
+--------------------------------------------- */
+.accordion-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .accordion-section {
+    padding-left: 35px;
+    padding-right: 35px;
+  }    
+}
+
+@media screen and (min-width: 1025px) {
+  .accordion-section {
+    padding-top: 150px 50px;
+  }  
+}
+
+.accordion-flex {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.accordion-flex .accordion-l {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .accordion-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .accordion-flex .accordion-l {
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .accordion-flex .accordion-r {
+    width: 41%;
+    margin-top: -15px;
+  }
+}
+
+.accordion-image {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.accordion-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.83;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .accordion-title {
+    font-size: 28px;
+  } 
+}
+
+.accordion-tagline {
+  margin: 10px 0 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.63;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .accordion-tagline {
+    font-size: 18px;
+  } 
+}
+
+.accordion-center {
+  margin-top: 40px;
+}
+
+.question {
+  margin: 0 0 10px;
+  padding: 21px 20px 20px 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+}
+
+@media screen and (min-width: 1025px) {
+  .question {
+      padding: 17px 20px 16px 30px;
+  }
+}
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-title p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+}
+
+@media screen and (min-width: 1025px) {
+  .question-title p {
+      font-size: 20px;
+  } 
+}
+
+.question-btn {
+  font-size: 1.75rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.question-btn span {
+  position: absolute;
+  top: 11px;
+  right: 20px;
+  line-height: 1;
+}
+
+.question-text p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.63;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .question-text p {
+      font-size: 18px;
+  } 
+}
+
+/* hide text */
+.question-text {
+  display: none;
+}
+
+.show-text .question-text {
+  display: block;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
+}
+
+/* Contact
+--------------------------------------------- */
+.contact-section {
+  padding: 100px 20px;
+  background-color: #f4f4f4;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section {
+    padding-left: 35px;
+    padding-right: 35px;
+  }  
+}
+
+@media screen and (min-width: 1025px) {
+  .contact-section {
+    padding: 150px 50px;
+  }  
+}
+
+.contact-inner {
+  padding: 40px 30px 50px;
+  box-shadow: 0 32px 64px 0 rgba(44, 39, 56, 0.04);
+  background-color: #fff;
+  max-width: 720px;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.contact-title {
+  margin: 0 0 9px;
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact-description {
+  margin: 0 0 30px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.38;
+  text-align: center;
+  display: block;
+}

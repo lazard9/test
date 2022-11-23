@@ -85,7 +85,7 @@
       </div>
     </div>
 
-    <div style="padding: 5px 40px;">
+    <!--<div style="padding: 5px 40px;">
       <div id="divButton">
         <div style="display:inline-block;">
           <h2 class="my-5">List of Customers</h2>
@@ -115,38 +115,253 @@
         <a th:href="@{/customers(size=${customerPage.size}, page=${pageNumber})}" th:text=${pageNumber}
           th:class="${pageNumber==customerPage.number + 1} ? active"></a>
       </div>
-    </div>
-  </main>
+    </div>-->
 
-  <div id="loadingImgSrv" class="loadImg">
-    <img id="loadingImg" class="loading-img" src="loading_transparent.gif" />
-  </div>
+    <section class="estate-section-grid">
+      <div class="section-grid__heading">
+        <span class="section-title--small mb-1">For Owners</span>
+        <h2 class="section-title">Sell and rent your real estate quickly and safely</h2>
+      </div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+      <div class="section-grid__image">
+        <img src="place_1.jpg" class="image">
+      </div>
+
+      <div class="section-grid__content">
+        <p class="section-paragraph">Save your time and easily rent or sell your property with the lowest commission on
+          the real estate market. Fulfill the form from our site or call us, and our team will take photos, make a
+          presentation, and the most modern display at 360 ° of the property. Your apartment house, or business space
+          will be available to thousands of buyers and tenants who search for real estate on our site.</p>
+        <div class="section-flex mb-3">
+          <img src="procenap.png" class="sec-img-icon me-1">
+          <span class="sec-text text-dark">Free real estate estimate of value</span>
         </div>
-        <div class="modal-body" id="modal-body">
-
+        <div class="section-flex mb-3">
+          <img src="agentp.png" class="sec-img-icon me-1">
+          <span class="sec-text text-dark">Experienced agents available throughout the whole process</span>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary">Close</button>
+        <div class="section-flex">
+          <img src="dokumentacijap.png" class="sec-img-icon me-1">
+          <span class="sec-text text-dark">Documentation assistance with contracts, and legal support</span>
+        </div>
+        <div class="mt-4">
+          <button type="button" class="btn btn-outline-primary font-weight-bold me-2">Find out more</button>
+          <button type="button" class="btn btn-primary font-weight-bold">Offer real estate</button>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+
+    <section class="estate-section-grid row-reverse">
+      <div class="section-grid__heading">
+        <span class="section-title--small mb-1"> For buyers and tenants</span>
+        <h2 class="section-title">Buy or rent apartment with <span class="text-primary">no commission</span></h2>
+      </div>
+
+      <div class="section-grid__image-reverse">
+        <img src="place_4.jpg" class="image">
+      </div>
+
+      <div class="section-grid__content">
+        <p class="section-paragraph">Save your time and easily rent or sell your property with the lowest commission on
+          the real estate market. Fulfill the form from our site or call us, and our team will take photos, make a
+          presentation, and the most modern display at 360 ° of the property. Your apartment house, or business space
+          will be available to thousands of buyers and tenants who search for real estate on our site.</p>
+        <div class="section-flex mb-3">
+          <img src="procenap.png" class="sec-img-icon me-2">
+          <span class="sec-text text-dark">Free real estate estimate of value</span>
+        </div>
+        <div class="section-flex mb-3">
+          <img src="agentp.png" class="sec-img-icon me-2">
+          <span class="sec-text text-dark">Experienced agents available throughout the whole process</span>
+        </div>
+        <div class="section-flex">
+          <img src="dokumentacijap.png" class="sec-img-icon me-2">
+          <span class="sec-text text-dark">Documentation assistance with contracts, and legal support</span>
+        </div>
+        <div class="mt-4">
+          <button type="button" class="btn btn-outline-primary font-weight-bold me-2">Properties for sale</button>
+          <button type="button" class="btn btn-outline-primary font-weight-bold me-2"> Properties for rent </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="estate-section-grid">
+      <div class="section-grid__heading">
+        <span class="section-title--small mb-1">For Owners</span>
+        <h2 class="section-title">Sell and rent your real estate quickly and safely</h2>
+      </div>
+
+      <div class="section-grid__image">
+        <img src="place_6.jpg" class="image">
+      </div>
+
+      <div class="section-grid__content">
+        <p class="section-paragraph">Save your time and easily rent or sell your property with the lowest commission on
+          the real estate market. Fulfill the form from our site or call us, and our team will take photos, make a
+          presentation, and the most modern display at 360 ° of the property. Your apartment house, or business space
+          will be available to thousands of buyers and tenants who search for real estate on our site.</p>
+        <div class="section-flex mb-3">
+          <img src="procenap.png" class="sec-img-icon me-1">
+          <span class="sec-text text-dark">Free real estate estimate of value</span>
+        </div>
+        <div class="section-flex mb-3">
+          <img src="agentp.png" class="sec-img-icon me-1">
+          <span class="sec-text text-dark">Experienced agents available throughout the whole process</span>
+        </div>
+        <div class="section-flex">
+          <img src="dokumentacijap.png" class="sec-img-icon me-1">
+          <span class="sec-text text-dark">Documentation assistance with contracts, and legal support</span>
+        </div>
+        <div class="mt-4">
+          <button type="button" class="btn btn-outline-primary font-weight-bold me-2">Find out more</button>
+          <button type="button" class="btn btn-primary font-weight-bold">Offer real estate</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center p-4 bg-light">
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Some Data - Weather API</a>
+    </section>
+
+    <section class="agency-section">
+      <span class="section-title--small mb-1">The first Serbian online real estate agency</span>
+      <h2 class="section-title">Why to choose City Expert?</h2>
+      <div class="agency-flex">
+        <div class="agency-card">
+          <img class="agency-card__image" src="piktogram01.png">
+          <h3 class="agency-card__title">Transparency</h3>
+          <p class="agency-card__text">We create comprehensive presentations of real estate with interactive 360° display, high quality photos and video, floor plan for better view. Easy, fast and without wasting your time!</p>
+        </div>
+        <div class="agency-card">
+          <img class="agency-card__image" src="piktogram02.png">
+          <h3 class="agency-card__title">Direct communication</h3>
+          <p class="agency-card__text">Communicate with the owner directly through just a few clicks on our website. Just register, choose a desired real estate and a viewing date, and we will connect you with the owner.</p>
+        </div>
+        <div class="agency-card">
+          <img class="agency-card__image" src="piktogram03.png">
+          <h3 class="agency-card__title">Free of charge for buyers and tenants</h3>
+          <p class="agency-card__text">If you want to buy or rent your new place for living, we are here to help you, completely free of charge! Yes, you read well, we are saving your money!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center p-4 bg-light">
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Some Data - Date/Time API</a>
+    </section>
+
+    <section class="paralax-section">
+      <div class="paralax-background"></div>
+      <span class="paralax-title">Paralax title</span>
+    </section>
+
+    <section class="accordion-section">
+      <div class="accordion-flex">
+        <div class="accordion-l">
+          <img src="zlatibor-slika-2.jpg" class="accordion-image" alt="Something..." decoding="async" width="800" height="450">
+        </div>
+        <div class="accordion-r">
+          <h2 class="accordion-title">Quisque porttitor</h2>
+          <p class="accordion-tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis risus mi. Ut
+            placerat quam lectus.</p>
+
+          <div class="accordion-center">
+            <article class="question shadow">
+              <div class="question-title text-dark">
+                <p>Accordion title</p>
+                <button type="button" class="question-btn">
+                  <span class="plus-icon text-primary">+</span>
+                  <span class="minus-icon text-primary">-</span>
+                </button>
+              </div>
+              <div class="question-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  dolore illo dolores quia nemo doloribus quaerat, magni numquam
+                  repellat reprehenderit.
+                </p>
+              </div>
+            </article>
+            <article class="question shadow">
+              <div class="question-title text-dark">
+                <p>Accordion title</p>
+                <button type="button" class="question-btn">
+                  <span class="plus-icon text-primary">+</span>
+                  <span class="minus-icon text-primary">-</span>
+                </button>
+              </div>
+              <div class="question-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  dolore illo dolores quia nemo doloribus quaerat, magni numquam
+                  repellat reprehenderit.
+                </p>
+              </div>
+            </article>
+            <article class="question border border-primary">
+              <div class="question-title text-dark">
+                <p>Accordion title</p>
+                <button type="button" class="question-btn">
+                  <span class="plus-icon text-primary">+</span>
+                  <span class="minus-icon text-primary">-</span>
+                </button>
+              </div>
+              <div class="question-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  dolore illo dolores quia nemo doloribus quaerat, magni numquam
+                  repellat reprehenderit.
+                </p>
+              </div>
+            </article>
+            <article class="question border border-primary">
+              <div class="question-title text-dark">
+                <p>Accordion title</p>
+                <button type="button" class="question-btn">
+                  <span class="plus-icon text-primary">+</span>
+                  <span class="minus-icon text-primary">-</span>
+                </button>
+              </div>
+              <div class="question-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                  dolore illo dolores quia nemo doloribus quaerat, magni numquam
+                  repellat reprehenderit.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section bg-light">
+      <div class="contact-inner shadow">
+        <h2 class="contact-title">Contact us</h2>
+        <span class="contact-description">In general, our team replies within 24-28 hours.</span>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="text-center text-lg-start bg-white text-muted">
     <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4">
       <!-- Left -->
       <div class="me-5 d-none d-lg-block">
         <span>Get connected with us on social networks:</span>
@@ -258,7 +473,7 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    <div class="text-center p-4 bg-light">
       © 2021 Copyright:
       <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
     </div>
@@ -276,11 +491,33 @@
   <!-- Initialize Swiper -->
   <script>
     const swiper = new Swiper(".mySwiper", {
-		autoplay: {
-			delay: 2000,
-		},
-		loop: true,
+      autoplay: {
+        delay: 2000,
+      },
+      loop: true,
     });
+  </script>
+
+  <!-- Accordion -->
+  <script>
+    (function () {
+        const questions = document.querySelectorAll(".question");
+        const btns = document.querySelectorAll(".question-btn");
+
+        btns.forEach(function (btn) {
+            btn.addEventListener("click", function (e) {
+                const question = e.currentTarget.closest(".question");
+
+                questions.forEach(function (item) {
+                    if (item !== question) {
+                        item.classList.remove("show-text");
+                    }
+                });
+
+                question.classList.toggle("show-text");
+            });
+        });
+    })();
   </script>
 </body>
 
