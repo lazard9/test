@@ -16,8 +16,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 
-<!doctype html>
-
 <body>
   <!--<nav th:insert="fragments/navbar.html :: nav"> </nav>-->
   <!--<div th:insert="fragments/links.html :: div"> </div>-->
@@ -76,9 +74,17 @@
             </div>
           </div>
           <div class="hero__content">
-            <p class="hero__title--small text-white">The first Serbian online real estate agency</p>
-            <h1 class="hero__title text-white"> Buy or rent properties<br>with <span class="text-primary">no
-                commission</span></h1>
+            <div class="hero__content--left">
+              <p class="hero__title--small text-white">The first Serbian online real estate agency</p>
+              <h1 class="hero__title text-white"> Buy or rent<br>properties with<br><span class="text-primary">no commission</span></h1>
+            </div>
+            <div class="hero__content--right">
+              <div class="hero__data">
+                <span class="bg-info"></span>
+                <span class="bg-light"></span>
+                <span class="bg-info"></span>
+              </div>
+            </div>
           </div>
           <div class="hero__shadow"></div>
         </div>
@@ -116,6 +122,96 @@
           th:class="${pageNumber==customerPage.number + 1} ? active"></a>
       </div>
     </div>-->
+
+    <section class="tiles-section-grid">
+      <div class="tiles-card">
+        <a href="#" class="tiles-card__link">
+          <div class="tiles-card__picture">
+            <div class="tiles-card__id">ID 50027</div>
+            <img class="tiles-card__image" src="place_1.jpg">
+          </div>
+          <div class="tiles-card__description">
+            <span class="tiles-card__price">1,050 €</span>
+            <span class="tiles-card__rent">Rent • Office space</span>
+            <span class="tiles-card__location text-muted">Nemanjina, Savski venac</span>
+          </div>
+          <div class="tiles-card__meta">
+            <span class="tiles-card_spacer"></span>
+            <div class="flex-meta">
+              <span class="tiles-card_property">65 m²</span>
+              <span class="tiles-card_feature">4.0</span>
+              <span class="tiles-card_furniture">Furnished</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles-card">
+        <a href="#" class="tiles-card__link">
+          <div class="tiles-card__picture">
+            <div class="tiles-card__id">ID 50027</div>
+            <img class="tiles-card__image" src="place_2.jpg">
+          </div>
+          <div class="tiles-card__description">
+            <span class="tiles-card__price">1,050 €</span>
+            <span class="tiles-card__rent">Rent • Office space</span>
+            <span class="tiles-card__location text-muted">Nemanjina, Savski venac</span>
+          </div>
+          <div class="tiles-card__meta">
+          	<span class="tiles-card_spacer"></span>
+            <div class="flex-meta">
+              <span class="tiles-card_property">65 m²</span>
+              <span class="tiles-card_feature">4.0</span>
+              <span class="tiles-card_furniture">Furnished</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles-card">
+        <a href="#" class="tiles-card__link">
+          <div class="tiles-card__picture">
+            <div class="tiles-card__id">ID 50027</div>
+            <img class="tiles-card__image" src="place_3.jpg">
+          </div>
+          <div class="tiles-card__description">
+            <span class="tiles-card__price">1,050 €</span>
+            <span class="tiles-card__rent">Rent • Office space</span>
+            <span class="tiles-card__location text-muted">Nemanjina, Savski venac</span>
+          </div>
+          <div class="tiles-card__meta">
+            <span class="tiles-card_spacer"></span>
+            <div class="flex-meta">
+              <span class="tiles-card_property">65 m²</span>
+              <span class="tiles-card_feature">4.0</span>
+              <span class="tiles-card_furniture">Furnished</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles-card">
+        <a href="#" class="tiles-card__link">
+          <div class="tiles-card__picture">
+            <div class="tiles-card__id">ID 50027</div>
+            <img class="tiles-card__image" src="place_4.jpg">
+          </div>
+          <div class="tiles-card__description">
+            <span class="tiles-card__price">1,050 €</span>
+            <span class="tiles-card__rent">Rent • Office space</span>
+            <span class="tiles-card__location text-muted">Nemanjina, Savski venac</span>
+          </div>
+          <div class="tiles-card__meta">
+            <span class="tiles-card_spacer"></span>
+            <div class="flex-meta">
+              <span class="tiles-card_property">65 m²</span>
+              <span class="tiles-card_feature">4.0</span>
+              <span class="tiles-card_furniture">Furnished</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
 
     <section class="estate-section-grid">
       <div class="section-grid__heading">
