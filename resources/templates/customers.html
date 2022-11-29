@@ -80,9 +80,18 @@
             </div>
             <div class="hero__content--right">
               <div class="hero__data">
-                <span class="bg-info"></span>
-                <span class="bg-light"></span>
-                <span class="bg-info"></span>
+                <form action="" class="hero__form">
+                  <span class="form-title text-white bg-primary fs-4 fw-semibold">Make a reservation</span>
+                  <div>
+                    <label for="checkin" class="fw-semibold fs-5">Check-in:</label>
+                    <input type="date" id="checkin" name="checkin" class="bg-light">
+                  </div>
+                  <div>
+                    <label for="checkout" class="fw-semibold fs-5">Check-out:</label>
+                    <input type="date" id="checkout" name="checkout" class="bg-light">
+                  </div>
+                  <input type="submit" value="Search" class="form-submit text-white bg-primary fs-4 fw-semibold">
+                </form>
               </div>
             </div>
           </div>

@@ -47,19 +47,57 @@
 .hero__wrapper .hero__content {
 	z-index: 3;
 	padding: 20px;
-	max-width: 1300px;
+	max-width: 600px;
 	width: 100%;
 	margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+	.hero__wrapper .hero__content {
+		max-width: 1300px;
+	}
 }
 
 .hero__wrapper .hero__content--right .hero__data {
 	border-radius: 20px;
 	overflow: hidden;
+	background-color: #fff;
 }
 
-.hero__wrapper .hero__content--right .hero__data span {
+.hero__wrapper .hero__content--right .hero__data .form-title,
+.hero__wrapper .hero__content--right .hero__data .form-submit  {
 	display: block;
-	height: 120px;
+	min-height: 110px;
+	width: 100%;
+	border: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero__wrapper .hero__content--right .hero__data .hero__form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hero__wrapper .hero__content--right .hero__data .hero__form > div {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 10px 25px;
+	min-height: 110px;
+}
+
+.hero__wrapper .hero__content--right .hero__data .hero__form > div label {
+	margin-bottom: 6px;
+}
+
+.hero__wrapper .hero__content--right .hero__data .hero__form > div input {
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-radius: 6px;
+	padding: 6px;
 }
 
 @media screen and (min-width: 768px) {
